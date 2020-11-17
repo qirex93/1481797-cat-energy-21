@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Клюев](https://up.htmlacademy.ru/adaptive/21/user/1481797).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Борисенко](https://htmlacademy.ru/profile/id1310789).
 
 ---
 
