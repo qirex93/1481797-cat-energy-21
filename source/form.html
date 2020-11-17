@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+
+  <header class="page-header page-header--inner">
+    <img class="page-header__logo-image" src="https://via.placeholder.com/33x38"" width=" 33" height="38"
+      alt="Лого Кэт энерджи">
+    <h2 class="page-header__title">CAT ENERGY</h2>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__text" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__text" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__text" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main page-main--form">
+
+    <section class="survey">
+        <div class="survey__wrapper">
+          <h2 class="survey__title">Подбор программы</h2>
+
+          <form class="survey__form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="survey__cat-params cat-params">
+              <legend class=cat-params__description>Заполните анкету, и мы подберем программу питания для вашего кота</legend>
+              <ul class="cat-params__list">
+
+                <li class="cat-params__item cat-params__item--name">
+                  <label class="cat-params__label">
+                    ИМЯ:*
+                    <input class="cat-params__input" type="text" name="cat-name-input" id="cat-name" value="БАРСИК">
+                  </label>
+                </li>
+
+                <li class="cat-params__item cat-params__item--weight">
+                  <label class="cat-params__label">
+                    Вес (кг):*
+                    <input class="cat-params__input" type="number" name="cat-weight-input" id="cat-weight" value="7">
+                  </label>
+                </li>
+
+                <li class="cat-params__item cat-params__item--age">
+                  <label class="cat-params__label">
+                    Возраст (лет):
+                    <input class="cat-params__input" type="number" name="cat-age-input" id="cat-age"  value="7">
+                  </label>
+                </li>
+
+              </ul>
+            </fieldset>
+
+            <fieldset class="survey__type-radio type-programm">
+              <ul class="type-programm__list">
+                <li class="type-programm__item type-programm__item--slim">
+                  <label class="type-programm__label">
+                    <input class="type-programm__input" name="type-radio" id="type-slim" type="radio" value="type-slim" checked>
+                    Похудение
+                  </label>
+                </li>
+                <li class="type-programm__item type-programm__item--pro">
+                  <label class="type-programm__label">
+                    <input class="type-programm__input" name="type-radio" id="type-pro" type="radio" value="type-pro">
+                    Набор массы
+                  </label>
+                </li>
+                <li class="type-programm__item type-programm__item--advice">
+                  <label class="type-programm__label">
+                    <input class="type-programm__input" name="type-radio" id="type-advice" type="radio" value="type-advice">
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+
+              <fieldset class="survey__contacts owner-contacts">
+                <legend class="survey__title owner-contacts__title">Контактные данные (владельца кота)</legend>
+                <ul class="owner-contacts__list">
+                  <li class="owner-contacts__item">
+                    <label class="owner-contacts__label">
+                      E-mail:*
+                      <input class="owner-contacts__input" type="email" name="email-owner-input" id="owner-email" value="kuklachev@gmail.com">
+                    </label>
+                  </li>
+                  <li class="owner-contacts__item">
+                    <label class="owner-contacts__label">
+                      Телефон:*
+                      <input class="owner-contacts__input" type="tel" name="tel-owner-input" id="owner-tel" value="8 (960) 900-60-90">
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="survey__comment commentary">
+                <legend class="commentary__title">Комментарий</legend>
+                <label class="commentary__label">
+                  <textarea class="commentary__input" type="text" name="comment-input" id="comment" value="Расскажите обо всех повАдках кота"></textarea>
+                </label>
+              </fieldset>
+
+              <fieldset class="survey__additional additional-checkbox">
+                <legend class="additional-checkbox__title">Дополнительно</legend>
+                <ul class="additional-checkbox__list">
+                  <li class="additional-checkbox__item">
+                    <label class="additional-checkbox__label">
+                      <input class="additional-checkbox__input visually-hidden" type="checkbox" name="sugar" id="sugar-check" checked>
+                      <span class="additional-checkbox__span"></span>
+                      сахарозаменитель
+                    </label>
+                  </li>
+                  <li class="additional-checkbox__item">
+                    <label class="additional-checkbox__label">
+                      <input class="additional-checkbox__input visually-hidden" name="drink-water" id="water-check" type="checkbox">
+                      <span class="additional-checkbox__span"></span>
+                      питьевая вода
+                    </label>
+                  </li>
+                  <li class="additional-checkbox__item">
+                    <label class="additional-checkbox__label">
+                      <input class="additional-checkbox__input visually-hidden" name="milk" id="milk-check" type="checkbox">
+                      <span class="additional-checkbox__span"></span>
+                      молоко
+                    </label>
+                  </li>
+                  <li class="additional-checkbox__item">
+                    <label class="additional-checkbox__label">
+                      <input class="additional-checkbox__input visually-hidden" name="vitamins" id="vitamins-check" type="checkbox">
+                      <span class="additional-checkbox__span"></span>
+                      витамины
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button class="survey__button button" type="submit">отправить заявку</button>
+              <p class="survey__legend">* — Обязательные поля</p>
+
+
+          </form>
+
+
+        </div>
+    </section>
+
+  </main>
+
+
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+
+      <div class="page-footer__map map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1605528835658!5m2!1sen!2sru"
+          width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+
+      <div class="page-footer__logo">
+        <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Изменения веса у кота">
+      </div>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item social__item--vkontakte">
+            <a class="social__link" title="Мы в Вконтакте" href="https://vk.com/htmlacademy">
+            </a>
+          </li>
+          <li class="social__item social__item--instagram">
+            <a class="social__link" title="Мы в Инстаграме" href="https://www.instagram.com/htmlacademy">
+              </a>
+          </li>
+          <li class="social__item social__item--facebook">
+            <a class="social__link" title="Мы в Фейсбуке" href="https://www.facebook.com/htmlacademy">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
