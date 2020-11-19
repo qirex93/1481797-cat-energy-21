@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
-    <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" width=" 33" height="38"
-      alt="Лого Кэт энерджи">
+    <img class="page-header__logo-image" src="img/logo-mobile.svg" width=" 33" height="38" alt="Лого Кэт энерджи">
     <h2 class="page-header__title">CAT ENERGY</h2>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -43,13 +43,17 @@
     <section class="diets">
       <div class="diets__wrapper">
         <header class="diets__header">
-          <h2 class="diets__title">
-            Функциональное питание для котов
-          </h2>
-          <p class="diets__slogan">Занялся собой? Займись котом!</p>
-          <img class="diets__image" src="https://via.placeholder.com/280x270" width="280" height="270"
+
+          <div class="diets__container">
+            <h2 class="diets__title">
+              Функциональное питание для котов
+            </h2>
+            <p class="diets__slogan">Занялся собой? Займись котом!</p>
+          </div>
+
+          <img class="diets__image" src="img/index-can-mobile.svg" width="280" height="270"
             alt="Кэт энерджи PRO - курица">
-          <a class="diets__button button" href="form.html">подобрать программу</a>
+          <a class="diets__button button" href="form.html"><p class="button__text">подобрать программу</p></a>
         </header>
 
         <ul class="diets__list catalogs-list">
@@ -149,7 +153,7 @@
           </li>
           <li class="social__item social__item--instagram">
             <a class="social__link" title="Мы в Инстаграме" href="https://www.instagram.com/htmlacademy">
-              </a>
+            </a>
           </li>
           <li class="social__item social__item--facebook">
             <a class="social__link" title="Мы в Фейсбуке" href="https://www.facebook.com/htmlacademy">
