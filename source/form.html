@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
 
   <header class="page-header page-header--inner">
-    <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" width=" 33" height="38"
+    <img class="page-header__logo-image" src="img/logo-mobile.svg" width=" 33" height="38"
       alt="Лого Кэт энерджи">
     <h2 class="page-header__title">CAT ENERGY</h2>
     <nav class="main-nav">
@@ -46,7 +47,7 @@
 
         <form class="survey__form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="survey__cat-params cat-params">
-            <legend class=cat-params__description>Заполните анкету, и мы подберем программу питания для вашего кота
+            <legend class="cat-params__description">Заполните анкету, и мы подберем программу питания для вашего кота
             </legend>
             <ul class="cat-params__list">
 
@@ -101,7 +102,7 @@
 
 
           <fieldset class="survey__contacts owner-contacts">
-            <legend class="survey__title owner-contacts__title">Контактные данные (владельца кота)</legend>
+            <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
             <ul class="owner-contacts__list">
               <li class="owner-contacts__item">
                 <label class="owner-contacts__label">
@@ -123,8 +124,8 @@
           <fieldset class="survey__comment commentary">
             <legend class="commentary__title">Комментарий</legend>
             <label class="commentary__label">
-              <textarea class="commentary__input" type="text" name="comment-input" id="comment"
-                value="Расскажите обо всех повАдках кота"></textarea>
+              <textarea class="commentary__input" type="textarea" name="comment-input" id="comment"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
 
@@ -177,7 +178,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--inner">
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
