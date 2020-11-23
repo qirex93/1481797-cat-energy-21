@@ -10,8 +10,7 @@
 <body class="page__body">
 
   <header class="page-header page-header--inner">
-    <img class="page-header__logo-image" src="img/logo-mobile.svg" width=" 33" height="38"
-      alt="Лого Кэт энерджи">
+    <img class="page-header__logo-image" src="img/logo-mobile.svg" width=" 33" height="38" alt="Лого Кэт энерджи">
     <h2 class="page-header__title">CAT ENERGY</h2>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -48,120 +47,137 @@
         </h3>
 
         <form class="survey__form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="survey__fieldset survey__fieldset--cat">
+          <fieldset class="survey__fieldset fieldset fieldset--cat">
 
-            <ul class="survey__list">
+            <ul class="fieldset__list">
 
-              <li class="survey__item">
-                <label class="survey__label">
-                  ИМЯ:*
-                  <input class="survey__input form-input" type="text" name="cat-name-input" id="cat-name" value="БАРСИК">
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <span class="fieldset__span">
+                    ИМЯ:*
+                  </span>
+                  <input class="fieldset__input" type="text" name="cat-name-input" id="cat-name" value="БАРСИК">
                 </label>
               </li>
 
-              <li class="survey__item">
-                <label class="survey__label">
-                  Вес (кг):*
-                  <input class="survey__input form-input" type="number" name="cat-weight-input" id="cat-weight" value="7">
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <span class="fieldset__span">
+                    Вес (кг):*
+                  </span>
+                  <input class="fieldset__input fieldset__input" type="number" name="cat-weight-input" id="cat-weight"
+                    value="7">
                 </label>
               </li>
 
-              <li class="survey__item">
-                <label class="survey__label">
-                  Возраст (лет):
-                  <input class="survey__input form-input" type="number" name="cat-age-input" id="cat-age" value="7">
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <span class="fieldset__span">
+                    Возраст (лет):
+                  </span>
+                  <input class="fieldset__input" type="number" name="cat-age-input" id="cat-age" value="7">
                 </label>
               </li>
 
             </ul>
           </fieldset>
 
-          <fieldset class="survey__fieldset survey__fieldset--radio">
-            <ul class="survey__list">
-              <li class="survey__item">
-                <label class="survey__label">
-                  <input class="survey__radio" name="type-radio" id="type-slim" type="radio" value="type-slim"
+          <fieldset class="survey__fieldset fieldset fieldset--radio">
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <input class="fieldset__radio" name="type-radio" id="type-slim" type="radio" value="type-slim"
                     checked>
-                  Похудение
+                  <span class="fieldset__span">
+                    Похудение
+                  </span>
                 </label>
               </li>
-              <li class="survey__item">
-                <label class="survey__label">
-                  <input class="survey__radio" name="type-radio" id="type-pro" type="radio" value="type-pro">
-                  Набор массы
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <input class="fieldset__radio" name="type-radio" id="type-pro" type="radio" value="type-pro">
+                  <span class="fieldset__span">
+                    Набор массы
+                  </span>
                 </label>
               </li>
-              <li class="survey__item">
-                <label class="survey__label">
-                  <input class="survey__radio" name="type-radio" id="type-advice" type="radio"
-                    value="type-advice">
-                  Не знаю (Нужен ваш совет)
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <input class="fieldset__radio" name="type-radio" id="type-advice" type="radio" value="type-advice">
+                  <span class="fieldset__span">
+                    Не знаю (Нужен ваш совет)
+                  </span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
 
-          <fieldset class="survey__fieldset survey__fieldset--contacts">
-            <h3 class="survey__title">Контактные данные (владельца кота)</h3>
-            <ul class="survey__list">
-              <li class="survey__item">
-                <label class="survey__label">
-                  E-mail:*
-                  <input class="survey__input form-input" type="email" name="email-owner-input" id="owner-email"
+          <fieldset class="survey__fieldset fieldset fieldset--contacts">
+            <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <span class="fieldset__span">
+                    E-mail:*
+                  </span>
+                  <input class="fieldset__input" type="email" name="email-owner-input" id="owner-email"
                     value="kuklachev@gmail.com">
                 </label>
               </li>
-              <li class="survey__item">
-                <label class="survey__label">
-                  Телефон:*
-                  <input class="survey__input form-input" type="tel" name="tel-owner-input" id="owner-tel"
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <span class="fieldset__span">
+                    Телефон:*
+                  </span>
+                  <input class="fieldset__input" type="tel" name="tel-owner-input" id="owner-tel"
                     value="8 (960) 900-60-90">
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="survey__fieldset survey__fieldset--comment">
-            <h3 class="survey__title">Комментарий</h3>
-            <label class="survey__label">
-              <textarea class="survey__input form-input" type="textarea" rows="8" name="comment-input" id="comment"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="survey__fieldset fieldset fieldset--comment">
+            <legend class="fieldset__title">Комментарий</legend>
+            <label class="fieldset__label">
+              <textarea class="fieldset__input" type="textarea" rows="8" name="comment-input" id="comment"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
 
-          <fieldset class="survey__fieldset survey__fieldset--additional">
-            <h3 class="survey__title ">Дополнительно</h3>
-            <ul class="survey__list">
-              <li class="survey__item">
-                <label class="survey__label">
-                  <input class="survey__checkbox" type="checkbox" name="sugar"
-                    id="sugar-check" checked>
-                  <span class="survey__span "></span>
-                  сахарозаменитель
+          <fieldset class="survey__fieldset fieldset fieldset--additional">
+            <legend class="fieldset__title ">Дополнительно</legend>
+            <ul class="fieldset__list">
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <input class="fieldset__checkbox" type="checkbox" name="sugar" id="sugar-check" checked>
+                  <span class="fieldset__span ">
+                    сахарозаменитель
+                  </span>
                 </label>
               </li>
-              <li class="survey__item">
-                <label class="survey__label">
-                  <input class="survey__checkbox" name="drink-water" id="water-check"
-                    type="checkbox">
-                  <span class="survey__span"></span>
-                  питьевая вода
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <input class="fieldset__checkbox" name="drink-water" id="water-check" type="checkbox">
+                  <span class="fieldset__span">
+                    питьевая вода
+                  </span>
                 </label>
               </li>
-              <li class="survey__item">
-                <label class="survey__label">
-                  <input class="survey__checkbox" name="milk" id="milk-check" type="checkbox">
-                  <span class="survey__span"></span>
-                  молоко
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <input class="fieldset__checkbox" name="milk" id="milk-check" type="checkbox">
+                  <span class="fieldset__span">
+                    молоко
+                  </span>
                 </label>
               </li>
-              <li class="survey__item">
-                <label class="survey__label">
-                  <input class="survey__checkbox" name="vitamins" id="vitamins-check"
-                    type="checkbox">
-                  <span class="survey__span"></span>
-                  витамины
+              <li class="fieldset__item">
+                <label class="fieldset__label">
+                  <input class="fieldset__checkbox" name="vitamins" id="vitamins-check" type="checkbox">
+                  <span class="fieldset__span">
+                    витамины
+                  </span>
                 </label>
               </li>
             </ul>
