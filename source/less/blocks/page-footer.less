@@ -1,7 +1,12 @@
 .page-footer {
+  position: relative;
   margin: 0;
   padding: 0;
   background-color: var(--basic-grey);
+}
+
+.page-footer__footer {
+  padding: 0 20px;
 }
 
 .page-footer__contacts {
@@ -12,4 +17,19 @@
 .page-footer--inner .page-footer__contacts {
   margin: 0;
   background-color: var(--basic-grey);
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-footer__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__footer {
+    padding: 0 110px;
+  }
 }

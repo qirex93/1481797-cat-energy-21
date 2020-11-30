@@ -1,4 +1,20 @@
 .page-header {
-  min-height: 66px;
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }

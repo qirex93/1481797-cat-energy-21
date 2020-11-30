@@ -1,18 +1,9 @@
-.diets {
-  position: relative;
-}
-
 .diets__header {
-  min-width: 320px;
-  height: 302px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: var(--basic-white);
   background: url("../img/index-background-cat.jpg") no-repeat;
-}
-
-.diets__container {
-  min-width: 320px;
-  height: 302px;
-  background: var(--special-green-opacity);
+  background-size: 100% 305px;
 }
 
 .diets__title {
@@ -24,8 +15,8 @@
 }
 
 .diets__slogan {
-  display: block;
-  margin-top: -5px;
+  margin-top: 26px;
+  margin-bottom: 27px;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
@@ -34,22 +25,101 @@
 }
 
 .diets__image {
-  position: absolute;
-  top: 160px;
-  left: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .diets__button {
   display: block;
-  margin-top: 138px;
-  margin-left: 20px;
-  margin-right: 20px;
-  min-width: 280px;
-  height: 40px;
+  margin-top: 3px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 100%;
   font-size: 14px;
   line-height: 18px;
 }
 
 .diets__list {
-  margin-top: 200px;
+  margin-top: 22px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .diets__header {
+    padding-top: 52px;
+    padding-bottom: 533px;
+    background-image: url("../img/index-can-mobile.svg");
+    background-position: 30px 251px;
+    background-size: 709px 609px;
+  }
+
+  .diets__title,
+  .diets__slogan {
+    text-align: left;
+    color: var(--basic-black);
+  }
+
+  .diets__title {
+    margin-bottom: 40px;
+    width: 420px;
+  }
+
+  .diets__slogan {
+    margin-bottom: 43px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .diets__image {
+    display: none;
+  }
+
+  .diets__button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 246px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .diets__header {
+    padding-top: 144px;
+    padding-bottom: 0;
+    background-image: url("../img/../img/index-background-cat.jpg");
+    background-position: calc(100% + 70px) 0;
+    background-size: 680px 696px;
+  }
+
+  .diets__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-left: 80px;
+    height: 602px;
+  }
+
+  .diets__title {
+    margin-top: 79px;
+    order: 1;
+  }
+
+  .diets__slogan {
+    order: 2;
+  }
+
+  .diets__button {
+    margin-top: 50px;
+    order: 3;
+  }
+
+  .diets__image {
+    display: block;
+    margin-left: -48px;
+    width: 597px;
+    order: 4;
+  }
 }
