@@ -1,6 +1,8 @@
+.description {
+  padding: 0 20px;
+}
+
 .description__wrapper {
-  margin-left: 20px;
-  margin-right: 21px;
   margin-top: 27px;
 }
 
@@ -11,5 +13,31 @@
 }
 
 .description__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    padding: 0 30px;
+  }
+
+  .description__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    padding: 0 110px;
+  }
+
+  .description__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+  }
 }
