@@ -1,3 +1,8 @@
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .contacts__title {
   margin-top: 28px;
   margin-left: 19px;
@@ -17,4 +22,13 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   color: var(--special-dark-grey);
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: absolute;
+    top: 150px;
+    left: 110px;
+    min-width: 570px;
+  }
 }
