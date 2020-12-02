@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -10,13 +11,13 @@
 <body class="page__body">
 
   <header class="page-header page-header--inner">
-    <img class="page-header__logo-image" src="img/logo-mobile.svg" width=" 33" height="38" alt="Лого Кэт энерджи">
-    <h2 class="page-header__title">CAT ENERGY</h2>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
+    <div class="page-header__wrapper">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width=" 33" height="38" alt="Лого Кэт энерджи">
+      <h2 class="page-header__title">CAT ENERGY</h2>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__text" href="index.html">
@@ -34,8 +35,8 @@
             </a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main page-main--form">
@@ -47,74 +48,73 @@
         </h3>
 
         <form class="survey__form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="survey__fieldset fieldset fieldset--cat">
+          <div class="survey__container">
+            <fieldset class="survey__fieldset fieldset fieldset--cat">
 
-            <ul class="fieldset__list">
+              <ul class="fieldset__list">
 
-              <li class="field fieldset__item">
-                <label class="field__label">
-                  <span class="field__span">
-                    ИМЯ:*
-                  </span>
-                  <input class="field__input" type="text" name="cat-name-input"  value="БАРСИК">
-                </label>
-              </li>
+                <li class="field fieldset__item">
+                  <label class="field__label">
+                    <span class="field__span">
+                      ИМЯ:*
+                    </span>
+                    <input class="field__input" type="text" name="cat-name-input" value="БАРСИК">
+                  </label>
+                </li>
 
-              <li class="field fieldset__item">
-                <label class="field__label">
-                  <span class="field__span">
-                    Вес (кг):*
-                  </span>
-                  <input class="field__input" type="number" name="cat-weight-input"
-                    value="7">
-                </label>
-              </li>
+                <li class="field fieldset__item">
+                  <label class="field__label">
+                    <span class="field__span">
+                      Вес (кг):*
+                    </span>
+                    <input class="field__input" type="number" name="cat-weight-input" value="7">
+                  </label>
+                </li>
 
-              <li class="field fieldset__item">
-                <label class="field__label">
-                  <span class="field__span">
-                    Возраст (лет):
-                  </span>
-                  <input class="field__input" type="number" name="cat-age-input"  value="7">
-                </label>
-              </li>
+                <li class="field fieldset__item">
+                  <label class="field__label">
+                    <span class="field__span">
+                      Возраст (лет):
+                    </span>
+                    <input class="field__input" type="number" name="cat-age-input" value="7">
+                  </label>
+                </li>
 
-            </ul>
-          </fieldset>
+              </ul>
+            </fieldset>
 
-          <fieldset class="survey__fieldset fieldset fieldset--radio">
-            <ul class="fieldset__list">
-              <li class="field fieldset__item">
-                <label class="field__label">
-                  <input class="visually-hidden" name="type-radio"  type="radio" value="type-slim"
-                    checked>
+            <fieldset class="survey__fieldset fieldset fieldset--radio">
+              <ul class="fieldset__list">
+                <li class="field fieldset__item">
+                  <label class="field__label">
+                    <input class="visually-hidden" name="type-radio" type="radio" value="type-slim" checked>
                     <span class="field__radio"></span>
-                  <span class="field__span">
-                    Похудение
-                  </span>
-                </label>
-              </li>
-              <li class="field fieldset__item">
-                <label class="field__label">
-                  <input class="visually-hidden" name="type-radio"  type="radio" value="type-pro">
-                  <span class="field__radio"></span>
-                  <span class="field__span">
-                    Набор массы
-                  </span>
-                </label>
-              </li>
-              <li class="field fieldset__item">
-                <label class="field__label">
-                  <input class="visually-hidden" name="type-radio" type="radio" value="type-advice">
-                  <span class="field__radio"></span>
-                  <span class="field__span">
-                    Не знаю (Нужен ваш совет)
-                  </span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
+                    <span class="field__span">
+                      Похудение
+                    </span>
+                  </label>
+                </li>
+                <li class="field fieldset__item">
+                  <label class="field__label">
+                    <input class="visually-hidden" name="type-radio" type="radio" value="type-pro">
+                    <span class="field__radio"></span>
+                    <span class="field__span">
+                      Набор массы
+                    </span>
+                  </label>
+                </li>
+                <li class="field fieldset__item">
+                  <label class="field__label">
+                    <input class="visually-hidden" name="type-radio" type="radio" value="type-advice">
+                    <span class="field__radio"></span>
+                    <span class="field__span">
+                      Не знаю (Нужен ваш совет)
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="survey__fieldset fieldset fieldset--contacts">
             <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
@@ -124,17 +124,15 @@
                   <span class="field__span">
                     E-mail:*
                   </span>
-                  <input class="field__input" type="email" name="email-owner-input"
-                    value="kuklachev@gmail.com">
+                  <input class="field__input" type="email" name="email-owner-input" value="kuklachev@gmail.com">
                 </label>
               </li>
-              <li class="field fieldset__item">
+              <li class="field fieldset__item fieldset__item--phone">
                 <label class="field__label">
                   <span class="field__span">
                     Телефон:*
                   </span>
-                  <input class="field__input" type="tel" name="tel-owner-input"
-                    value="8 (960) 900-60-90">
+                  <input class="field__input" type="tel" name="tel-owner-input" value="8 (960) 900-60-90">
                 </label>
               </li>
             </ul>
@@ -142,10 +140,12 @@
 
           <fieldset class="survey__fieldset fieldset fieldset--comment">
             <legend class="fieldset__title">Комментарий</legend>
-            <label class="field fieldset__item">
-              <textarea class="field__input field__input--textarea" type="textarea" rows="8" name="comment-input" id="comment"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
-            </label>
+            <div class="field fieldset__item">
+              <label class="field__label">
+                <textarea class="field__input field__input--textarea" type="textarea" rows="8" name="comment-input"
+                  id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="survey__fieldset fieldset fieldset--additional">
@@ -153,7 +153,7 @@
             <ul class="fieldset__list">
               <li class="field fieldset__item">
                 <label class="field__label">
-                  <input class="visually-hidden" type="checkbox" name="sugar"  checked>
+                  <input class="visually-hidden" type="checkbox" name="sugar" checked>
                   <span class="field__checkbox"></span>
                   <span class="field__span ">
                     сахарозаменитель
@@ -162,7 +162,7 @@
               </li>
               <li class="field fieldset__item">
                 <label class="field__label">
-                  <input class="visually-hidden" name="drink-water"  type="checkbox">
+                  <input class="visually-hidden" name="drink-water" type="checkbox">
                   <span class="field__checkbox"></span>
                   <span class="field__span">
                     питьевая вода
@@ -190,9 +190,10 @@
             </ul>
           </fieldset>
 
-          <button class="survey__button button" type="submit">отправить заявку</button>
-          <p class="survey__note">* — Обязательные поля</p>
-
+          <div class="survey__container">
+            <button class="survey__button button" type="submit">отправить заявку</button>
+            <p class="survey__note">* — Обязательные поля</p>
+          </div>
         </form>
 
       </div>
@@ -201,19 +202,20 @@
   </main>
 
   <footer class="page-footer page-footer--inner">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
 
-      <div class="page-footer__map map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1605528835658!5m2!1sen!2sru"
-          width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-      </div>
+    <div class="page-footer__contacts contacts">
+      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
 
+    <div class="page-footer__map map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1605528835658!5m2!1sen!2sru"
+        width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+
+    <div class="page-footer__footer">
       <div class="page-footer__logo">
         <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Изменения веса у кота">
       </div>
@@ -222,15 +224,15 @@
         <ul class="social__list">
           <li class="social__item social__item--vkontakte">
             <a class="social__link" title="Мы в Вконтакте" href="https://vk.com/htmlacademy">
-            </a>
+              Мы в Вконтакте</a>
           </li>
           <li class="social__item social__item--instagram">
             <a class="social__link" title="Мы в Инстаграме" href="https://www.instagram.com/htmlacademy">
-            </a>
+              Мы в Инстаграме</a>
           </li>
           <li class="social__item social__item--facebook">
             <a class="social__link" title="Мы в Фейсбуке" href="https://www.facebook.com/htmlacademy">
-            </a>
+              Мы в Фейсбуке</a>
           </li>
         </ul>
       </div>
@@ -240,7 +242,6 @@
           <span class="copyright__text">HTML Academy</span>
         </a>
       </div>
-
     </div>
   </footer>
 

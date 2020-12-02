@@ -1,5 +1,5 @@
 .survey__wrapper {
-  margin: 0 20px;
+  padding: 0 20px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -14,8 +14,8 @@
 }
 
 .survey__sub-title {
-  margin-top: 37px;
   max-width: 226px;
+  margin-top: 37px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -28,7 +28,7 @@
 }
 
 .survey__fieldset {
-  margin: 27px 0 0 0;
+  margin: 0;
 }
 
 .survey__button {
@@ -43,4 +43,21 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .survey__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .survey__wrapper {
+    padding: 0 110px;
+  }
+
+  .survey__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
