@@ -11,8 +11,8 @@
 }
 
 .fieldset__title {
-  margin: 0  0 33px 0;
   max-width: 187px;
+  margin: 0  0 33px 0;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -56,4 +56,35 @@
 .fieldset--additional .fieldset__item {
   margin-bottom: 25px;
   color: var(--basic-black);
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset--radio .fieldset__list {
+    border: 1px solid var(--special-border-input);
+  }
+
+  .fieldset--additional .fieldset__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset--radio {
+    margin-left: 80px;
+  }
+
+  .fieldset__item--phone {
+    margin-left: 78px;
+  }
+
+  .fieldset--contacts .fieldset__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fieldset--additional .fieldset__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
