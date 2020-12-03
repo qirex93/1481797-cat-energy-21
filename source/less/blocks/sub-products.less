@@ -1,5 +1,5 @@
 .sub-products__wrapper {
-  margin: 0 20px;
+  padding: 0 20px;
 }
 
 .sub-products__title {
@@ -15,4 +15,16 @@
   margin: 35px 0 0 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .sub-products__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sub-products__wrapper {
+    padding: 0 110px;
+  }
 }
