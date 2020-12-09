@@ -45,7 +45,7 @@
   text-transform: uppercase;
 }
 
-.catalog-type__link:after  {
+.catalog-type__link::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -54,8 +54,8 @@
   height: 12px;
   background: url("../img/arrow-short.svg") 100% no-repeat;
 
-  &:hover:after,
-  &:active:after {
+  &:hover::after,
+  &:active::after {
     width: 32px;
     height: 12px;
     background: url("../img/arrow-long.svg") 100% no-repeat;
@@ -106,7 +106,7 @@
     font-size: 20px;
     line-height: 30px;
 
-    &:after {
+    &::after {
       top: 10px;
       left: 133px;
     }
@@ -120,11 +120,11 @@
   }
 
   .catalog-type--pro {
-   justify-self: end;
+    justify-self: end;
   }
 
   .catalog-type__title {
-    margin: 78px 0 0 214px ;
+    margin: 78px 0 0 214px;
   }
 
   .catalog-type__description {
@@ -154,7 +154,7 @@
   .catalog-type__link {
     margin: 0 53px;
 
-    &:after {
+    &::after {
       top: 10px;
       left: 133px;
     }

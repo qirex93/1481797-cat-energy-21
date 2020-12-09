@@ -29,7 +29,7 @@
 
 
 .slider__divisor {
-  background-position-x: 0px; //130px
+  background-position-x: 0;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -74,7 +74,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .slider {
     position: relative;
     height: 399px;
@@ -86,7 +85,7 @@
   }
 
   .slider__progress-bar {
-    transform: translate(0px, 11px);
+    transform: translate(0, 11px);
     width: 427px;
     height: 35px;
     margin: 0 24px;
@@ -102,7 +101,6 @@
     display: block;
     width: 100%;
     height: 6px;
-    -webkit-appearance: none;
     appearance: none;
     background-color: var(--special-grey);
     border-radius: 6px;
@@ -113,25 +111,21 @@
 
   .slider__range::-webkit-slider-thumb {
     position: relative;
-    -webkit-appearance: none;
     appearance: none;
     width: 34px;
     height: 34px;
     border: 1px solid var(--special-grey);
     border-radius: 50%;
-    box-shadow: 0 2px 2px 0 var(--special-grey),
-                inset 0px 0px 0px 12px var(--basic-white);
+    box-shadow: 0 2px 2px 0 var(--special-grey), inset 0 0 0 12px var(--basic-white);
     background-color: var(--basic-green);
 
     &:hover,
     &:focus {
-      box-shadow: 0 5px 5px 0 var(--special-grey),
-                  inset 0px 0px 0px 12px var(--basic-white);
+      box-shadow: 0 5px 5px 0 var(--special-grey), inset 0 0 0 12px var(--basic-white);
     }
 
     &:active {
-      box-shadow: 0 5px 5px 0 var(--special-grey),
-                  inset 0px 0px 0px 12px var(--basic-white);
+      box-shadow: 0 5px 5px 0 var(--special-grey), inset 0 0 0 12px var(--basic-white);
       border-color: var(--basic-green);
     }
   }
@@ -141,20 +135,17 @@
     height: 25px;
     border-radius: 50%;
     border: 1px solid var(--special-grey);
-    box-shadow: 0 2px 2px 0 var(--special-grey),
-                inset 0px 0px 0px 8px var(--basic-white);
+    box-shadow: 0 2px 2px 0 var(--special-grey), inset 0 0 0 8px var(--basic-white);
     background-color: var(--basic-green);
 
     &:hover,
     &:focus {
-      box-shadow: 0 5px 5px 0 var(--special-grey),
-                  inset 0px 0px 0px 8px var(--basic-white);
+      box-shadow: 0 5px 5px 0 var(--special-grey), inset 0 0 0 8px var(--basic-white);
     }
 
     &:active {
       border: 1px solid var(--basic-green);
-      box-shadow: 0 5px 5px 0 var(--special-grey),
-                  inset 0px 0px 0px 8px var(--basic-white);
+      box-shadow: 0 5px 5px 0 var(--special-grey), inset 0 0 0 8px var(--basic-white);
       border-color: var(--basic-green);
     }
   }
@@ -187,10 +178,8 @@
 
   .slider__figure {
     position: relative;
-    background-position: 108px 0px;
-    background-image: url("../img/cat-skinny.png"),
-                      linear-gradient(0deg, rgba(234,234,234,1) 67%,
-                       rgba(255,255,255,1) 67%);
+    background-position: 108px 0;
+    background-image: url("../img/cat-skinny.png"), linear-gradient(0deg, rgba(234, 234, 234, 1) 67%, rgba(255, 255, 255, 1) 67%);
     font-size: 0;
     width: 708px;
     height: 520px;
@@ -198,10 +187,8 @@
   }
 
   .slider__divisor {
-    background-image: url("../img/cat-fat.png"),
-                      linear-gradient(0deg, rgba(242,242,242,1) 67%,
-                      rgba(255,255,255,1) 67%);
-    background-position: 8px 0px;
+    background-image: url("../img/cat-fat.png"), linear-gradient(0deg, rgba(242, 242, 242, 1) 67%, rgba(255, 255, 255, 1) 67%);
+    background-position: 8px 0;
     background-size: 708px 520px;
     position: absolute;
     width: 100%;
@@ -209,11 +196,14 @@
     bottom: 0;
     height: 100%;
   }
-
 }
 
 
 @media (min-width: @desktop-width) {
+  .slider__toggle {
+    background-color: inherit;
+  }
+
   .slider__container {
     margin: 359px auto 0;
     padding-left: 33px;
@@ -230,10 +220,8 @@
 
   .slider__figure {
     position: relative;
-    background-position: 85px 0px;
-    background-image: url("../img/cat-skinny.png"),
-                      linear-gradient(0deg, rgba(234,234,234,1) 64%,
-                       rgba(255,255,255,1) 64%);
+    background-position: 85px 0;
+    background-image: url("../img/cat-skinny.png"), linear-gradient(0deg, rgba(234, 234, 234, 1) 64%, rgba(255, 255, 255, 1) 64%);
     font-size: 0;
     width: 720px;
     height: 520px;
@@ -241,10 +229,8 @@
   }
 
   .slider__divisor {
-    background-image: url("../img/cat-fat.png"),
-                      linear-gradient(0deg, rgba(242,242,242,1) 64%,
-                      rgba(255,255,255,1) 64%);
-    background-position: -5px 0px;
+    background-image: url("../img/cat-fat.png"), linear-gradient(0deg, rgba(242, 242, 242, 1) 64%, rgba(255, 255, 255, 1) 64%);
+    background-position: -5px 0;
     background-size: 680px 520px;
     position: absolute;
     width: 100%;
@@ -253,4 +239,3 @@
     height: 100%;
   }
 }
-
