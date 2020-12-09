@@ -1,10 +1,13 @@
 .copyright {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 22px 0;
+  width: 100%;
 }
 
 .copyright__link {
-  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   font-size: 16px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
@@ -13,4 +16,19 @@
 
 .copyright__link:active {
   opacity: 30%;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__text {
+    min-width: 114px;
+    margin-right: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

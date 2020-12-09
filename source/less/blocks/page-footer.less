@@ -1,7 +1,6 @@
 .page-footer {
   position: relative;
   margin: 0;
-  padding: 0;
   background-color: var(--basic-grey);
 }
 
@@ -19,12 +18,32 @@
   background-color: var(--basic-grey);
 }
 
+.page-footer__logo {
+  padding: 38px 0 28px;
+  text-align: center;
+}
+
 
 @media (min-width: @tablet-width) {
   .page-footer__footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: min-content min-content min-content;
+    justify-content: space-between;
     padding: 0 30px;
+  }
+
+  .page-footer__logo {
+    width: 128px;
+    margin: 55px 0 61px 0;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    margin: 55px 0 0 0;
+  };
+
+  .page-footer__copyright {
+    margin: 50px 0 0 0;
   }
 }
 

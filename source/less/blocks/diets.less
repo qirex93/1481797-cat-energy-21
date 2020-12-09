@@ -2,11 +2,13 @@
   position: relative;
   padding: 0 20px;
   color: var(--basic-white);
-  background: url("../img/index-background-cat.jpg") no-repeat;
-  background-size: 100% 305px;
+  background: url("../img/cat-background-mobile.jpg") no-repeat;
+  background-size: 100% 302px;
+  background-position: center top;
 }
 
 .diets__title {
+  margin: 0;
   padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
@@ -32,7 +34,7 @@
 .diets__button {
   display: block;
   width: 100%;
-  margin-top: 3px;
+  margin-top: 4px;
   padding-top: 11px;
   padding-bottom: 11px;
   font-size: 14px;
@@ -40,13 +42,14 @@
 }
 
 .diets__list {
+  margin: 0;
   margin-top: 22px;
 }
 
 
 @media (min-width: @tablet-width) {
   .diets__header {
-    padding: 62px 30px 600px 30px;
+    padding: 47px 30px 580px 30px;
     background: var(--basic-white);
   }
 
@@ -75,21 +78,21 @@
 
   .diets__image {
     position: absolute;
-    top: 270px;
-    left: 0;
+    top: 249px;
+    left: 80px;
     right: 0;
-    min-width: 709px;
+    width: 678px;
     height: 609px;
   }
 
   .diets__button {
     position: absolute;
-    top: 292px;
+    top: 273px;
     left: 112px;
     z-index: 2;
-    width: 246px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    width: 244px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -97,10 +100,11 @@
 
 @media (min-width: @desktop-width) {
   .diets__header {
+    margin-top: -112px;
     padding: 144px 110px 0;
     background: url("../img/cat-background-desktop.jpg") no-repeat;
     background-position: 100% 0;
-    background-size: 680px 696px;
+    background-size: 720px 694px;
   }
 
   .diets__container {
@@ -115,18 +119,23 @@
 
   .diets__title {
     margin-top: 79px;
+    padding-left: 15px;
+  }
+
+  .diets__slogan {
+    padding-left: 15px;
   }
 
   .diets__button {
-    top: 500px;
-    left: 170px;
+    top: 451px;
+    left: 190px;
   }
 
   .diets__image {
-    top: 180px;
-    right: 338px;
+    top: 142px;
+    right: 306px;
     left: auto;
-    height: 499px;
-    min-width: 552px;
+    height: 502px;
+    width: 565px;
   }
 }

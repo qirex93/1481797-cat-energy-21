@@ -1,21 +1,22 @@
 .catalogs-list {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  grid-gap: 22px;
   align-items: center;
-  padding: 0 20px 0;
+  padding: 0 20px;
   list-style: none;
 }
 
 .catalogs-list__item {
   width: 100%;
-  height: 266px;
-  margin-top: 20px;
+  min-height: 266px;
   background: var(--basic-grey);
 }
 
 @media (min-width: @tablet-width) {
   .catalogs-list {
     padding: 0 30px 0;
+    grid-gap: 35px;
   }
 }
 
