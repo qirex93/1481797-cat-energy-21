@@ -13,27 +13,31 @@
   color: var(--special-dark-grey);
 }
 
+.advantage__br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .advantage {
     display: flex;
     flex-direction: column;
+    min-height: 280px;
     font-size: 16px;
     line-height: 24px;
-    min-height: 280px;
 
-    &--healthy {
+    &--first {
       background: url("../img/advantage-background-1.svg") 72% 0 no-repeat;
     }
 
-    &--useful {
+    &--second {
       background: url("../img/advantage-background-2.svg") 89% 0 no-repeat;
     }
 
-    &--change {
+    &--third {
       background: url("../img/advantage-background-3.svg") 91% 0 no-repeat;
     }
 
-    &--enjoy {
+    &--fourth {
       background: url("../img/advantage-background-4.svg") 96% 0 no-repeat;
     }
   }
@@ -45,6 +49,10 @@
 
   .advantage__text {
     margin: 31px 0 0 0;
+  }
+
+  .advantage__br {
+    display: initial;
   }
 }
 

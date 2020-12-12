@@ -1,5 +1,8 @@
 .page-header {
   position: relative;
+}
+
+.page-header__wrapper {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
@@ -29,7 +32,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
+  .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 30px;
@@ -48,8 +51,14 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    padding: 0 110px;
     z-index: 2;
+  }
+
+  .page-header__wrapper {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 110px;
   }
 
   .page-header__container {
