@@ -9,10 +9,18 @@
   margin: 0;
 }
 
+.page__header {
+  position: relative;
+}
+
 @media (min-width: @desktop-width) {
   .page__header {
     position: absolute;
-    top: 112px;
-    margin-top: -112px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
