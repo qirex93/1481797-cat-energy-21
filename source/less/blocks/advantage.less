@@ -1,4 +1,5 @@
 .advantage {
+  display: flex;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -6,6 +7,56 @@
 }
 
 .advantage__text {
-  margin: 0 0 26px 0;
+  min-width: 179px;
+  margin: 0 0 0 20px;
   color: var(--special-dark-grey);
+}
+
+.advantage__br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantage {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--first {
+      background: url("../img/advantage-background-1.svg") 72% 0 no-repeat;
+    }
+
+    &--second {
+      background: url("../img/advantage-background-2.svg") 89% 0 no-repeat;
+    }
+
+    &--third {
+      background: url("../img/advantage-background-3.svg") 91% 0 no-repeat;
+    }
+
+    &--fourth {
+      background: url("../img/advantage-background-4.svg") 96% 0 no-repeat;
+    }
+  }
+
+  .advantage__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .advantage__text {
+    margin: 31px 0 0 0;
+  }
+
+  .advantage__br {
+    display: initial;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__icon {
+    margin-left: 2px;
+  }
 }

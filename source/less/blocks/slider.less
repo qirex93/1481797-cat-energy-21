@@ -1,9 +1,241 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.slider__comparison {
+  align-self: center;
+  width: 311px;
+  height: 232px;
+  overflow: hidden;
+  background-image: url("../img/cat-fat.png");
+  background-size: cover;
+}
+
+.slider__figure {
+  position: relative;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+.slider__divisor {
+  background-position-x: 0;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
+
 .slider__toggle {
-  min-width: 49px;
+  width: 49px;
   height: 30px;
   font-size: 16px;
   line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   text-align: center;
   border: none;
+  background-color: var(--special-example-section);
+  cursor: pointer;
+}
+
+.slider__progress-bar {
+  width: 75px;
+  height: 7px;
+  margin: 0 12px;
+  padding: 3px 5px;
+  border: 1px solid var(--special-grey);
+  border-radius: 10px;
+  background-color: var(--basic-white);
+}
+
+.slider__progress-toggle {
+  width: 50%;
+  height: 6px;
+  margin-top: 1px;
+  border-radius: 10px;
+  background-color: var(--basic-green);
+}
+
+.slider__range {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    position: relative;
+    height: 399px;
+  }
+
+  .slider__container {
+    width: 570px;
+    margin: 361px auto 0;
+  }
+
+  .slider__progress-bar {
+    transform: translate(0, 11px);
+    width: 427px;
+    height: 35px;
+    margin: 0 24px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .slider__progress-toggle {
+    display: none;
+  }
+
+  .slider__range {
+    display: block;
+    width: 100%;
+    height: 6px;
+    appearance: none;
+    background-color: var(--special-grey);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transform: scaleX(-1);
+  }
+
+  .slider__range::-webkit-slider-thumb {
+    position: relative;
+    appearance: none;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--special-grey);
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 var(--special-grey), inset 0 0 0 12px var(--basic-white);
+    background-color: var(--basic-green);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 5px 5px 0 var(--special-grey), inset 0 0 0 12px var(--basic-white);
+    }
+
+    &:active {
+      box-shadow: 0 5px 5px 0 var(--special-grey), inset 0 0 0 12px var(--basic-white);
+      border-color: var(--basic-green);
+    }
+  }
+
+  .slider__range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--special-grey);
+    box-shadow: 0 2px 2px 0 var(--special-grey), inset 0 0 0 8px var(--basic-white);
+    background-color: var(--basic-green);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 5px 5px 0 var(--special-grey), inset 0 0 0 8px var(--basic-white);
+    }
+
+    &:active {
+      border: 1px solid var(--basic-green);
+      box-shadow: 0 5px 5px 0 var(--special-grey), inset 0 0 0 8px var(--basic-white);
+      border-color: var(--basic-green);
+    }
+  }
+
+  .slider__toggle {
+    font-size: 20px;
+    line-height: 30px;
+    width: auto;
+    padding: 0;
+    border-bottom: 1px dotted var(--special-grey);
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-bottom-color: transparent;
+    }
+  }
+
+  .slider__comparison {
+    position: absolute;
+    top: -2px;
+    width: 708px;
+    height: 520px;
+    margin-top: -170px;
+  }
+
+  .slider__figure {
+    position: relative;
+    background-position: 108px 0;
+    background-image: url("../img/cat-skinny.png"), linear-gradient(0deg, rgba(234, 234, 234, 1) 67%, rgba(255, 255, 255, 1) 67%);
+    font-size: 0;
+    width: 708px;
+    height: 520px;
+    margin: 0;
+  }
+
+  .slider__divisor {
+    background-image: url("../img/cat-fat.png"), linear-gradient(0deg, rgba(234, 234, 234, 1) 67%, rgba(255, 255, 255, 1) 67%);
+    background-position: 8px 0;
+    background-size: 708px 520px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    bottom: 0;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .slider__toggle {
+    background-color: inherit;
+  }
+
+  .slider__container {
+    margin: 359px auto 0;
+    padding-left: 33px;
+  }
+
+  .slider__comparison {
+    position: absolute;
+    z-index: 44;
+    top: -2px;
+    width: 680px;
+    height: 520px;
+    margin-top: -185px;
+  }
+
+  .slider__figure {
+    position: relative;
+    background-position: 85px 0;
+    background-image: url("../img/cat-skinny.png"), linear-gradient(0deg, rgba(234, 234, 234, 1) 64%, rgba(255, 255, 255, 1) 64%);
+    font-size: 0;
+    width: 720px;
+    height: 520px;
+    margin: 0;
+  }
+
+  .slider__divisor {
+    background-image: url("../img/cat-fat.png"), linear-gradient(0deg, rgba(242, 242, 242, 1) 64%, rgba(255, 255, 255, 1) 64%);
+    background-position: -5px 0;
+    background-size: 680px 520px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    bottom: 0;
+  }
 }

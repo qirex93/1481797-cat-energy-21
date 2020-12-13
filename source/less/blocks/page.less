@@ -8,3 +8,19 @@
   min-height: 100%;
   margin: 0;
 }
+
+.page__header {
+  position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .page__header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
