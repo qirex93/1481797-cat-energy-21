@@ -43,16 +43,6 @@
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-}
-
-.catalog-type__link::after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 100px;
-  width: 24px;
-  height: 12px;
-  background: url("../img/arrow-short.svg") 100% no-repeat;
 
   &:hover::after,
   &:active::after {
@@ -64,6 +54,16 @@
   &:active {
     opacity: 30%;
   }
+}
+
+.catalog-type__link::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 100px;
+  width: 24px;
+  height: 12px;
+  background: url("../img/arrow-short.svg") 100% no-repeat;
 }
 
 @media (min-width: @tablet-width) {

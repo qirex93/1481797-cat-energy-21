@@ -21,6 +21,20 @@
 .page-footer__logo {
   padding: 38px 0 28px;
   text-align: center;
+
+  &--inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--inner:hover .page-footer__icon,
+  &--inner:focus .page-footer__icon {
+    opacity: 0.8;
+  }
+
+  &--inner:active .page-footer__icon {
+    opacity: 0.6;
+  }
 }
 
 
