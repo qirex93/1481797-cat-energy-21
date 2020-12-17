@@ -7,15 +7,17 @@
 }
 
 .survey__main-title {
+  margin: 27px 0 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-transform: initial;
   color: var(--basic-black);
 }
 
 .survey__sub-title {
   max-width: 226px;
-  margin-top: 37px;
+  margin: 37px 0 0;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -28,26 +30,117 @@
 }
 
 .survey__fieldset {
-  margin: 0;
+  &--contacts,
+  &--comment,
+  &--additional {
+    margin-top: 23px;
+  }
+
+  &--radio {
+    margin: 0 -20px;
+  }
+}
+
+.survey__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.survey__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.survey__headline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: 40px;
+  background-color: var(--basic-green);
 }
 
 .survey__button {
-  margin-top: 9px;
-  padding: 7px 44px;
+  padding: 10px 44px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .survey__note {
-  margin-top: 21px;
+  margin: 19px 0 32px;
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   text-align: center;
+  text-transform: initial;
 }
 
 @media (min-width: @tablet-width) {
   .survey__wrapper {
-    padding: 0 30px;
+    padding: 0 69px 0 67px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .survey__main-title {
+    margin-top: 47px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .survey__sub-title {
+    max-width: 323px;
+    margin-top: 54px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .survey__form {
+    margin-top: 66px;
+  }
+
+  .survey__footer {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 32px 0 72px 4px;
+  }
+
+  .survey__fieldset {
+    &--contacts {
+      margin-top: 71px;
+    }
+
+    &--comment,
+    &--additional {
+      margin-top: 66px;
+    }
+  }
+
+  .survey__headline {
+    margin-top: 90px;
+
+    &--contacts {
+      margin-top: 97px;
+    }
+  }
+
+  .survey__button {
+    width: 282px;
+    margin: 0;
+    padding: 16px 45px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .survey__note {
+    margin: 16px 0 0 63px;
+    font-size: 16px;
   }
 }
 
@@ -59,5 +152,68 @@
   .survey__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .survey__text-container {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .survey__main-title {
+    margin-top: 75px;
+  }
+
+  .survey__sub-title {
+    max-width: 323px;
+  }
+
+  .survey__headline {
+    margin-top: 72px;
+
+    &--additional {
+      margin-top: 89px;
+    }
+  }
+
+  .survey__footer {
+    grid-template-columns: min-content max-content;
+    grid-gap: 80px;
+    max-width: 1220px;
+    margin: 40px auto 82px auto;
+  }
+
+  .survey__fieldset {
+    &--contacts,
+    &--comment,
+    &--additional {
+      max-width: 1220px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--contacts,
+    &--comment {
+      margin-top: 50px;
+    }
+
+    &--additional {
+      margin-top: 66px;
+    }
+  }
+
+  .survey__button {
+    width: 568px;
+    padding: 16px 45px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .survey__note {
+    margin: 15px 0 0 0;
   }
 }

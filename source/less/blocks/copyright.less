@@ -12,10 +12,23 @@
   line-height: 18px;
   font-family: "Arial", sans-serif;
   color: var(--special-dark-grey);
+
+  &:active {
+    opacity: 30%;
+  }
+
+  &:active .copyright__icon {
+    fill: var(--basic-green);
+  }
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: var(--basic-green);
+  }
 }
 
-.copyright__link:active {
-  opacity: 30%;
+.copyright__icon {
+  fill: var(--special-grey-2);
 }
 
 @media (min-width: @tablet-width) {
