@@ -11,6 +11,20 @@
   border-bottom: 1px solid var(--special-grey);
 }
 
+.social__link {
+  color: var(--special-grey-2);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--basic-green);
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .social__list {
     grid-gap: 25px;
