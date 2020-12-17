@@ -33,20 +33,12 @@
     outline-offset: -2px;
   }
 
-  &--error + .field__icon--mail {
-    stroke: var(--error);
+  &--error + .field__icon {
+    color: var(--error);
   }
 
-  &--error + .field__icon--phone {
-    fill: var(--error);
-  }
-
-  &:focus + .field__icon--mail {
-    stroke: var(--basic-green);
-  }
-
-  &:focus + .field__icon--phone {
-    fill: var(--basic-green);
+  &:focus + .field__icon {
+    color: var(--basic-green);
   }
 }
 
@@ -64,14 +56,7 @@
 .field__icon {
   position: absolute;
   right: 15px;
-
-  &--mail {
-    stroke: var(--basic-black);
-  }
-
-  &--phone {
-    fill: var(--basic-black);
-  }
+  color: var(--basic-black);
 }
 
 .field__radio {
