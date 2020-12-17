@@ -31,6 +31,10 @@
 
 .survey__fieldset {
   margin: 0;
+
+  &--radio {
+    margin: 0 -20px;
+  }
 }
 
 .survey__container {
@@ -39,8 +43,24 @@
   justify-content: center;
 }
 
+.survey__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 0 0;
+}
+
+.survey__headline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: 40px;
+  background-color: var(--basic-green);
+}
+
 .survey__button {
-  margin-top: 15px;
   padding: 10px 44px;
   font-size: 16px;
   line-height: 20px;
@@ -48,7 +68,7 @@
 }
 
 .survey__note {
-  margin: 21px 0 32px;
+  margin: 19px 0 32px;
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
@@ -81,10 +101,22 @@
     margin-top: 66px;
   }
 
-  .survey__container--button {
+  .survey__footer {
     flex-direction: row;
     justify-content: flex-start;
-    margin: 31px 0 72px 4px;
+    margin: 19px 0 72px 4px;
+  }
+
+  .survey__fieldset--contacts {
+    margin-top: 5px;
+  }
+
+  .survey__headline {
+    margin-top: 90px;
+
+    &--contacts {
+      margin-top: 97px;
+    }
   }
 
   .survey__button {
@@ -102,15 +134,16 @@
 
 @media (min-width: @desktop-width) {
   .survey__wrapper {
-    max-width: 1220px;
     padding: 0 110px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .survey__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .survey__text-container {
@@ -127,21 +160,48 @@
     max-width: 323px;
   }
 
-  .survey__container--button {
+  .survey__headline {
+    margin-top: 72px;
+
+    &--additional {
+      margin-top: 89px;
+    }
+  }
+
+  .survey__footer {
     grid-template-columns: min-content max-content;
     grid-gap: 80px;
-    margin: 31px 0 82px 4px;
+    max-width: 1220px;
+    margin: 24px auto 82px auto;
+  }
+
+  .survey__fieldset {
+    &--contacts,
+    &--comment,
+    &--additional {
+      max-width: 1220px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--contacts,
+    &--comment {
+      margin-top: 30px;
+    }
+
+    &--additional {
+      margin-top: 46px;
+    }
   }
 
   .survey__button {
     width: 568px;
-    margin: 11px 0 0;
     padding: 16px 45px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .survey__note {
-    margin: 28px 0 0 0;
+    margin: 15px 0 0 0;
   }
 }
