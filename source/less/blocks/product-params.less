@@ -1,9 +1,16 @@
 .product-params {
   display: grid;
-  grid-template-columns: min-content min-content;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
   justify-content: space-between;
 }
 
+.product-params__text,
 .product-params__value {
+  margin: 0;
   white-space: nowrap;
+}
+
+.product-params__value {
+  text-align: right;
 }

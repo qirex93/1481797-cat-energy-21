@@ -1,12 +1,9 @@
 .sub-product {
-  border-top: 1px solid var(--special-grey);
-
-  &:last-child {
-    border-bottom: 1px solid var(--special-grey);
-  }
+  border-bottom: 1px solid var(--special-grey);
 }
 
 .sub-product__title {
+  margin: 13px 0 0;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -21,6 +18,7 @@
 
 .sub-product__text,
 .sub-product__value {
+  margin: 15px 0 13px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -31,8 +29,12 @@
 
 .sub-product__button {
   width: 100%;
-  margin: 15px 0 19px 0;
+  margin-bottom: 17px;
   padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 @media (min-width: @tablet-width) {

@@ -1,10 +1,50 @@
 .product {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
-  padding: 19px 0;
+  height: 208px;
   border-top: 1px solid var(--special-grey);
 }
+
+.product__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 280px;
+  margin: 0 0 0 auto;
+  padding: 19px 20px 0;
+
+  & .product__image {
+    margin-left: 36px;
+
+    &--chicken {
+      margin-top: 13px;
+    }
+
+    &--fish {
+      margin-top: 25px;
+    }
+
+    &--buckweat {
+      margin-top: 29px;
+    }
+
+    &--rice {
+      margin-top: 23px;
+    }
+  }
+
+  & .product__container {
+    margin-bottom: 23px;
+  }
+}
+
+.product--large {
+
+  & .product__image {
+    margin-top: 10px;
+    margin-left: 28px;
+  }
+}
+
 
 .product__title {
   max-width: 76px;
@@ -17,7 +57,7 @@
 }
 
 .product__list {
-  margin: 0;
+  margin-top: 14px;
   padding: 0;
   font-size: 12px;
   line-height: 16px;
@@ -29,23 +69,37 @@
 }
 
 .product__button {
+  position: relative;
   grid-column-start: 1;
   grid-column-end: 3;
-  margin-top: 22px;
-  margin-bottom: 25px;
+  margin: 0 20px 25px;
   padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .product--all {
-  padding-bottom: 8px;
+  grid-template-rows: min-content min-content min-content;
+  padding-bottom: 0;
   border-bottom: 1px solid var(--special-grey);
+
+  .product__wrapper {
+    grid-template-columns: 1fr;
+    padding: 25px 20px 0;
+  }
+
+  .product__icon {
+    justify-self: center;
+  }
 
   .product__title {
     grid-column-start: 1;
     grid-column-end: 3;
     justify-self: center;
     max-width: 204px;
-    margin: 79px 0 0 59px;
+    margin: 23px 0 0;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -59,7 +113,7 @@
     grid-column-end: 3;
     justify-self: center;
     max-width: 221px;
-    margin: 8px 0 0 49px;
+    margin-top: 8px;
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
@@ -69,9 +123,8 @@
   }
 
   .product__button {
-    width: 100%;
-    margin-top: 21px;
-    padding: 20px 94px;
+    margin: 10px 20px 0;
+    padding: 10px 94px;
     font-family: "Oswald", "Arial", sans-serif;
     color: var(--special-dark-grey);
     background-color: var(--basic-grey);
