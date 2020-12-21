@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 289px;
   min-width: 280px;
-  background: url(../img/gift-background.jpg) no-repeat;
+  background: url("../img/gift-background.jpg") no-repeat;
 }
 
 .gift__icon {
@@ -20,4 +20,44 @@
   font-weight: 400;
   text-align: center;
   color: var(--basic-white);
+}
+
+@media (min-width: @tablet-width) {
+  .gift__wrapper {
+    flex-direction: row;
+    min-height: 200px;
+    min-width: 708px;
+    background: url("../img/gift-background-tablet.jpg") no-repeat;
+  }
+
+  .gift__icon {
+    margin: 0 0 0 78px;
+  }
+
+  .gift__title {
+    max-width: 162px;
+    margin: 0 0 0 267px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift__wrapper {
+    flex-direction: column;
+    min-height: 289px;
+    min-width: 245px;
+    background: url("../img/gift-background-desktop.jpg") no-repeat;
+  }
+
+  .gift__icon {
+    margin: 55px auto 0 auto;
+  }
+
+  .gift__title {
+    max-width: 161px;
+    margin: 52px 0 0 0;
+    text-align: center;
+  }
 }
