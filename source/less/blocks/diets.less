@@ -9,6 +9,10 @@
   background: url("../img/cat-background-mobile.jpg") no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(99, 167, 60, 1) 37%) no-repeat;
   background-size: 320px 302px, auto;
   background-position: center top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-background-mobile@2x.jpg"), linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(99, 167, 60, 1) 37%) no-repeat;
+  }
 }
 
 .diets__title {
@@ -83,9 +87,9 @@
   .diets__image {
     position: absolute;
     top: 249px;
-    left: 80px;
+    left: 0;
     right: 0;
-    width: 678px;
+    width: 709px;
     height: 609px;
   }
 
@@ -120,11 +124,17 @@
     background: url("../img/cat-background-desktop.jpg") no-repeat;
     background-position: 100% 0;
     background-size: 720px 694px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/cat-background-desktop@2x.jpg") no-repeat;
+      background-position: 100% 0;
+      background-size: 720px 694px;
+    }
   }
 
   .diets__center-wrapper {
     position: relative;
-    max-width: 1220px; //
+    max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -161,7 +171,7 @@
 
   .diets__image {
     top: 0;
-    right: 195px;
+    right: 210px;
     left: auto;
     height: 502px;
     width: 565px;
