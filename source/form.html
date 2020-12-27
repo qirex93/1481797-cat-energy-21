@@ -13,12 +13,12 @@
   <header class="page-header page-header--inner page__header--inner">
     <div class="page-header__wrapper page-header__wrapper--inner">
       <a class="page-header__container page-header__link">
-        <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg" width=" 33"
-          height="38" alt="Лого Кэт энерджи">
-        <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-tablet.svg" width=" 174"
-          height="52" alt="Лого Кэт энерджи">
-        <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-desktop.svg" width="202"
-          height="59" alt="Лого Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width=" 33"
+            height="38" alt="Лого Кэт энерджи">
+          </picture>
         <svg class="page-header__logo-text" width="101" height="18" viewBox="0 0 101 18" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
