@@ -17,6 +17,10 @@
   overflow: hidden;
   background-image: url("../img/cat-fat.png");
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-fat@2x.png");
+  }
 }
 
 .slider__figure {
@@ -184,6 +188,12 @@
     width: 708px;
     height: 520px;
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-skinny@2x.png"), linear-gradient(0deg, rgba(234, 234, 234, 1) 67%, rgba(255, 255, 255, 1) 67%);
+      background-size: 650px 520px;
+      background-position: 50px 0;
+    }
   }
 
   .slider__divisor {
@@ -195,6 +205,10 @@
     height: 100%;
     overflow: hidden;
     bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-fat@2x.png"), linear-gradient(0deg, rgba(234, 234, 234, 1) 67%, rgba(255, 255, 255, 1) 67%);
+    }
   }
 }
 
@@ -226,6 +240,12 @@
     width: 720px;
     height: 520px;
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-position: 46px 0;
+      background-size: 620px 520px;
+      background-image: url("../img/cat-skinny@2x.png"), linear-gradient(0deg, rgba(234, 234, 234, 1) 64%, rgba(255, 255, 255, 1) 64%);
+    }
   }
 
   .slider__divisor {
@@ -237,5 +257,9 @@
     height: 100%;
     overflow: hidden;
     bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-fat@2x.png"), linear-gradient(0deg, rgba(242, 242, 242, 1) 64%, rgba(255, 255, 255, 1) 64%);
+    }
   }
 }
