@@ -6,12 +6,12 @@
   position: relative;
   padding: 0 20px;
   color: var(--basic-white);
-  background: url("../img/cat-background-mobile.jpg") no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(99, 167, 60, 1) 37%);
+  background: url("../img/cat-background-mobile.jpg") no-repeat, var(--diet-gradient-mobile);
   background-size: 320px 302px, auto;
   background-position: center top;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/cat-background-mobile@2x.jpg") no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(99, 167, 60, 1) 37%);
+    background: url("../img/cat-background-mobile@2x.jpg") no-repeat, var(--diet-gradient-mobile);
     background-size: 320px 302px, auto;
     background-position: center top;
   }
@@ -114,7 +114,7 @@
     position: absolute;
     width: 100%;
     height: 694px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(99, 167, 60, 1) 50%) no-repeat;
+    background: var(--diet-gradient-desktop) no-repeat;
     background-position: 100% 0;
     z-index: 1;
   }
@@ -123,7 +123,7 @@
     position: relative;
     z-index: 1;
     padding: 144px 110px 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
     background-image: url("../img/cat-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 100% 0;
