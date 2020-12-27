@@ -6,12 +6,12 @@
   position: relative;
   padding: 0 20px;
   color: var(--basic-white);
-  background: url("../img/cat-background-mobile.jpg") no-repeat, var(--diet-gradient-mobile);
+  background: url("../img/cat-background-mobile.jpg") no-repeat, linear-gradient(0deg, var(--basic-white) 37%, var(--cat-bg-green) 37%);
   background-size: 320px 302px, auto;
   background-position: center top;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/cat-background-mobile@2x.jpg"), var(--diet-gradient-mobile);
+    background-image: url("../img/cat-background-mobile@2x.jpg"), linear-gradient(0deg, var(--basic-white) 37%, var(--cat-bg-green) 37%);
   }
 }
 
@@ -112,7 +112,7 @@
     position: absolute;
     width: 100%;
     height: 694px;
-    background: var(--diet-gradient-desktop) no-repeat;
+    background: linear-gradient(90deg, var(--basic-white) 50%, var(--cat-bg-green) 50%) no-repeat;
     background-position: 100% 0;
     z-index: 1;
   }
