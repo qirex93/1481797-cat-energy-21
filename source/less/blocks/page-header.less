@@ -23,9 +23,15 @@
 }
 
 .page-header__logo-image {
+  width: 34px;
   height: 38px;
   margin-top: 11px;
   margin-bottom: 18px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .page-header__logo-text {
@@ -49,9 +55,15 @@
   }
 
   .page-header__logo-image {
+    display: initial;
     width: 174px;
     height: 52px;
     margin-top: 20px;
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
   }
 }
 
@@ -75,8 +87,14 @@
   }
 
   .page-header__logo-image {
+    display: initial;
     width: 202px;
     height: 59px;
     margin-top: 0;
+
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
   }
 }
