@@ -10,10 +10,6 @@
 
 <body class="page__body">
 
-  <div style="display: none">
-    <include src="../img/sprite.svg"></include>
-  </div>
-
   <header class="page-header page__header">
     <div class="page-header__wrapper">
       <div class="page-header__container">
@@ -74,9 +70,13 @@
           </div>
 
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
-            <img class="diets__image" src="img/index-can-mobile.webp" srcset="img/index-can-mobile@2x.webp 2x" width="280"
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@2x.webp 1x, img/index-can-mobile@2x.webp 2x">
+              
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+            <img class="diets__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280"
               height="270" alt="Кэт энерджи PRO - курица">
           </picture>
           <a class="diets__button button" href="form.html">подобрать программу</a>
@@ -199,8 +199,7 @@
     <div class="page-footer__map map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1605528835658!5m2!1sen!2sru"
-        width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0">
+        width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
       </iframe>
     </div>
 
