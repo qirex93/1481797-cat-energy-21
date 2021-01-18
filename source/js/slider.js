@@ -15,14 +15,14 @@ window.onload = function() {
 
 beforeButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  sliderImage.style.backgroundImage = "url('../img/cat-fat.png')";
+  sliderImage.style.backgroundImage = "url('img/cat-fat.png')";
   sliderImage.style.backgroundSize = "cover";
   sliderToggle.style.marginLeft = "0";
 });
 
 afterButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  sliderImage.style.backgroundImage = "url('../img/cat-skinny.png')";
+  sliderImage.style.backgroundImage = "url('img/cat-skinny.png')";
   sliderImage.style.backgroundSize = "100% 232px";
   sliderToggle.style.marginLeft = "37px";
 });
