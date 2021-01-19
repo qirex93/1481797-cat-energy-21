@@ -4,6 +4,7 @@ var sliderImage = document.querySelector(".slider__comparison");
 var sliderToggle = document.querySelector(".slider__progress-toggle");
 var divisor = document.querySelector(".slider__divisor");
 var slider = document.querySelector(".slider__range");
+var sliderRange = document.querySelector(".slider__range");
 
 function moveDivisor() {
   divisor.style.width = slider.value+"%";
@@ -18,6 +19,8 @@ beforeButton.addEventListener("click", function (evt) {
   sliderImage.style.backgroundImage = "url('img/cat-fat.png')";
   sliderImage.style.backgroundSize = "cover";
   sliderToggle.style.marginLeft = "0";
+  sliderRange.value = "100";
+  divisor.style.width = 100+"%";
 });
 
 afterButton.addEventListener("click", function (evt) {
@@ -25,4 +28,6 @@ afterButton.addEventListener("click", function (evt) {
   sliderImage.style.backgroundImage = "url('img/cat-skinny.png')";
   sliderImage.style.backgroundSize = "100% 232px";
   sliderToggle.style.marginLeft = "37px";
+  sliderRange.value = "0";
+  divisor.style.width = 0+"%";
 });

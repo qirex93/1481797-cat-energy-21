@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -14,13 +15,13 @@
     <div class="page-header__wrapper">
       <div class="page-header__container">
 
-        <svg class="page-header__logo-image page-header__logo-image--mobile">
+        <svg class="page-header__logo-image page-header__logo-image--mobile" width="33" height="38">
           <use xlink:href="img/sprite.svg#logo-mobile"></use>
         </svg>
-        <svg class="page-header__logo-image page-header__logo-image--tablet">
+        <svg class="page-header__logo-image page-header__logo-image--tablet" width="174" height="52">
           <use xlink:href="img/sprite.svg#logo-tablet"></use>
         </svg>
-        <svg class="page-header__logo-image page-header__logo-image--desktop">
+        <svg class="page-header__logo-image page-header__logo-image--desktop" width="202" height="59">
           <use xlink:href="img/sprite.svg#logo-desktop"></use>
         </svg>
         <svg class="page-header__logo-text" width="101" height="18">
@@ -29,7 +30,7 @@
 
       </div>
       <h2 class="visually-hidden">CAT ENERGY</h2>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
 
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -84,7 +85,7 @@
 
       <ul class="diets__list catalogs-list">
         <li class="catalogs-list__item catalog-type catalog-type--slim">
-          <svg class="catalog-type__image">
+          <svg class="catalog-type__image" width="50" height="53">
             <use xlink:href="img/sprite.svg#cat-slim"></use>
           </svg>
           <h3 class="catalog-type__title">Похудение</h3>
@@ -94,7 +95,7 @@
         </li>
 
         <li class="catalogs-list__item catalog-type catalog-type--pro">
-          <svg class="catalog-type__image catalog-type__image--pro">
+          <svg class="catalog-type__image catalog-type__image--pro" width="67" height="50">
             <use xlink:href="img/sprite.svg#cat-mass"></use>
           </svg>
           <h3 class="catalog-type__title">Набор массы</h3>
@@ -110,25 +111,25 @@
         <h2 class="description__title">Как это работает</h2>
         <ul class="description__list">
           <li class="description__item advantage advantage--first">
-            <svg class="advantage__icon">
+            <svg class="advantage__icon" width="60" height="60">
               <use xlink:href="img/sprite.svg#leaf"></use>
             </svg>
             <p class="advantage__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="description__item advantage advantage--second">
-            <svg class="advantage__icon">
+            <svg class="advantage__icon" width="60" height="60">
               <use xlink:href="img/sprite.svg#powder"></use>
             </svg>
             <p class="advantage__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="description__item advantage advantage--third">
-            <svg class="advantage__icon">
+            <svg class="advantage__icon" width="60" height="60">
               <use xlink:href="img/sprite.svg#knife"></use>
             </svg>
             <p class="advantage__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="description__item advantage advantage--fourth">
-            <svg class="advantage__icon">
+            <svg class="advantage__icon" width="60" height="60">
               <use xlink:href="img/sprite.svg#timer"></use>
             </svg>
             <p class="advantage__text">Уже через месяц наслаждайтесь изменениями к лучшему<br class="advantage__br">
@@ -159,7 +160,7 @@
                 <p class="results__description">затрачено времени</p>
               </li>
             </ul>
-            <p class="live-example__costs">Затраты на питание: <span class="live-example__summary">15 000 РУБ.<span></p>
+            <p class="live-example__costs">Затраты на питание: <span class="live-example__summary">15 000 РУБ.</span></p>
           </div>
         </div>
 
@@ -198,7 +199,7 @@
     <div class="page-footer__map map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1605528835658!5m2!1sen!2sru"
-        width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
       </iframe>
     </div>
 
@@ -251,5 +252,4 @@
   <script src="js/slider.min.js"></script>
 
 </body>
-
 </html>
